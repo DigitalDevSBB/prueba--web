@@ -942,6 +942,10 @@ body {
     --content-padding-x: 1.75rem;
   }
 
+  .hero-content {
+    padding-top: 40px;
+  }
+
   .section-bar-mint {
     flex-direction: column;
     gap: 1.25rem;
@@ -991,6 +995,7 @@ body {
 
 @media (max-width: 600px) {
   .hero-content {
+    padding-top: 40px;
     padding-left: 28px;
     padding-right: 28px;
   }
