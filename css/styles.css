@@ -398,7 +398,7 @@ body {
 /* Crece un 20% (de 800px a 960px) en Desktop y Tablets */
 @media (min-width: 601px) {
   .sistema-diagram-img {
-    max-width: 960px;
+    max-width: 1200px;
   }
 }
 
@@ -414,7 +414,7 @@ body {
 }
 
 .transformacion-section {
-  padding: 3rem var(--content-padding-x) 5.5rem var(--content-padding-x);
+  padding: 3rem 160px 5.5rem 160px;
   background-color: var(--color-slate-section);
 }
 
@@ -497,6 +497,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 3.5rem var(--content-padding-x);
+  background-color: var(--color-terracotta);
   color: #FFFFFF;
   text-decoration: none;
   cursor: pointer;
@@ -956,6 +957,11 @@ body {
   .transformacion-cards-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+
+  .transformacion-section {
+    padding-left: var(--content-padding-x);
+    padding-right: var(--content-padding-x);
   }
 
   .footer-grid {
