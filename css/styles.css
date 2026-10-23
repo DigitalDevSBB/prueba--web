@@ -8,8 +8,8 @@
   /* Color Palette */
   --color-bg: #FFFFFF;
   --color-sidebar: #FFFFFF;
-  --color-terracotta: #D94627;
-  --color-terracotta-hover: #F25939;
+  --color-terracotta: #F25939;
+  --color-terracotta-hover: #D94627;
   --color-mint-bar: #98D8D2;
   --color-slate-section: #465B6E;
   --color-text-main: #1B2934;
@@ -393,6 +393,13 @@ body {
   display: block;
   transition: transform 0.4s ease;
   filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.03));
+}
+
+/* Crece un 20% (de 800px a 960px) en Desktop y Tablets */
+@media (min-width: 601px) {
+  .sistema-diagram-img {
+    max-width: 960px;
+  }
 }
 
 .sistema-diagram-wrapper:hover .sistema-diagram-img {
