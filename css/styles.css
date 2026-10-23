@@ -1631,10 +1631,15 @@ body {
   margin-bottom: 0.85rem;
 }
 
+.equipo-surname {
+  font-weight: 300;
+}
+
 .equipo-role {
   font-size: clamp(0.95rem, 1.1vw, 1.1rem);
   font-weight: 700;
-  line-height: 1.35;
+  line-height: 26px;
+  min-height: 26px;
   color: var(--color-terracotta);
   margin-bottom: 0.85rem;
 }
@@ -1642,7 +1647,8 @@ body {
 .equipo-subtitle {
   font-size: clamp(0.9rem, 1vw, 1rem);
   font-weight: 600;
-  line-height: 1.4;
+  line-height: 26px;
+  min-height: 26px;
   color: var(--color-text-main);
   margin-bottom: 1.25rem;
 }
@@ -1650,7 +1656,8 @@ body {
 .equipo-bio {
   font-size: clamp(0.85rem, 0.95vw, 0.98rem);
   font-weight: 300;
-  line-height: 1.6;
+  line-height: 26px;
+  min-height: 26px;
   color: var(--color-text-subtle);
   max-width: 560px;
 }
@@ -1673,6 +1680,7 @@ body {
   .equipo-row.equipo-row-reverse {
     display: flex;
     flex-direction: column;
+    height: auto;
     min-height: auto;
   }
 
@@ -1686,12 +1694,18 @@ body {
 
   .equipo-avatar-col {
     width: 100%;
+    height: auto;
+    min-height: auto;
+    flex: 0 0 auto;
     aspect-ratio: 1 / 1;
     max-height: 480px;
   }
 
   .equipo-info-col {
     width: 100%;
+    height: auto;
+    min-height: auto;
+    flex: 1 0 auto;
     padding: 3rem var(--content-padding-x) 4rem var(--content-padding-x);
   }
 }
@@ -1711,8 +1725,15 @@ body {
   }
 
   .equipo-avatar-col {
+    height: auto;
+    min-height: auto;
     aspect-ratio: 1 / 1;
     max-height: 360px;
+  }
+
+  .equipo-info-col {
+    height: auto;
+    min-height: auto;
   }
 
   .equipo-name {
@@ -1721,14 +1742,20 @@ body {
 
   .equipo-role {
     font-size: 0.98rem;
+    line-height: 1.35;
+    min-height: auto;
   }
 
   .equipo-subtitle {
     font-size: 0.92rem;
+    line-height: 1.4;
+    min-height: auto;
   }
 
   .equipo-bio {
     font-size: 0.88rem;
+    line-height: 1.6;
+    min-height: auto;
   }
 }
 
