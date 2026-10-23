@@ -131,14 +131,15 @@ body {
   white-space: nowrap;
 }
 
-.sidebar .nav-item a:hover {
-  color: var(--color-text-main);
-  transform: translateX(-3px);
+.sidebar .nav-item.active a {
+  color: var(--color-terracotta);
+  font-weight: 700;
 }
 
-.sidebar .nav-item.active a {
-  color: var(--color-text-main);
-  font-weight: 700;
+.sidebar .nav-item a:hover,
+.sidebar .nav-item.active a:hover {
+  color: var(--color-terracotta);
+  transform: translateX(-3px);
 }
 
 /* Mobile Header Bar (Hidden on Desktop) */
@@ -884,6 +885,11 @@ body {
     font-weight: 600;
     color: var(--color-text-main);
     display: block;
+    transition: color var(--transition-fast);
+  }
+
+  .mobile-nav-drawer .mobile-nav-link:hover {
+    color: var(--color-terracotta);
   }
 
   .mobile-nav-drawer .nav-item.active .mobile-nav-link {
