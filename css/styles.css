@@ -904,7 +904,7 @@ body {
 
   .hero-content {
     padding-top: 80px;
-    padding-left: 0;
+    padding-left: var(--content-padding-x);
   }
 
   .hero-tagline {
@@ -990,6 +990,11 @@ body {
 }
 
 @media (max-width: 600px) {
+  .hero-content {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
   .section-bar-mint .section-bar-text {
     font-size: 1.05rem;
   }
