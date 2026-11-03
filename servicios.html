@@ -17,7 +17,7 @@
 <body class="servicios-page">
   <div class="app-container">
 
-    <!-- Mobile Header Bar (Visible on mobile/tablet) -->
+    <!-- Top Header Bar (All Viewports) -->
     <header class="mobile-header">
       <a href="index.html" class="brand-logo" aria-label="Inicio SBB">
         <img src="assets/00_Branding/SBB-2026-logo.png" alt="SBB Logo">
@@ -29,49 +29,33 @@
       </button>
     </header>
 
-    <!-- Mobile Navigation Drawer -->
-    <nav class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Navegación móvil">
+    <!-- Navigation Drawer (Deploys via Hamburger Icon) -->
+    <nav class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Navegación principal">
       <ul class="nav-menu">
-        <li class="nav-item"><a href="index.html" class="mobile-nav-link">Inicio</a></li>
         <li class="nav-item"><a href="index.html#hero" class="mobile-nav-link">Nosotros</a></li>
         <li class="nav-item active"><a href="servicios.html" class="mobile-nav-link">Servicios</a></li>
         <li class="nav-item"><a href="proyectos.html" class="mobile-nav-link">Proyectos</a></li>
         <li class="nav-item"><a href="equipo.html" class="mobile-nav-link">Equipo</a></li>
+        <li class="nav-item"><a href="sustentabilidad.html" class="mobile-nav-link">Sustentabilidad</a></li>
       </ul>
     </nav>
-
-    <!-- Desktop Sidebar Navigation -->
-    <aside class="sidebar" aria-label="Navegación principal">
-      <a href="index.html" class="brand-logo" aria-label="Inicio SBB">
-        <img src="assets/00_Branding/SBB-2026-logo.png" alt="SBB Logo">
-      </a>
-      <nav>
-        <ul class="nav-menu">
-          <li class="nav-item"><a href="index.html#hero">Nosotros</a></li>
-          <li class="nav-item active"><a href="servicios.html">Servicios</a></li>
-          <li class="nav-item"><a href="proyectos.html">Proyectos</a></li>
-          <li class="nav-item"><a href="equipo.html">Equipo</a></li>
-        </ul>
-      </nav>
-    </aside>
 
     <!-- Main Content Stream -->
     <main class="main-content">
 
       <!-- Section 1: Hero & Banner -->
       <section class="servicios-hero-section" id="hero">
-        <div class="servicios-hero-header">
-          <p class="hero-tagline reveal-on-scroll">Sustainability, Brand &amp; Business</p>
-          <h1 class="servicios-hero-title reveal-on-scroll delay-1">
-            SERVICIOS &amp;<br>
-            SOLUCIONES<br>
-            PRIORITARIAS
-          </h1>
-        </div>
-
-        <!-- Banner Image -->
-        <div class="servicios-banner-container reveal-on-scroll delay-2">
-          <img src="assets/02_Servicios/Banner-Servicios.png" alt="Servicios y Soluciones Prioritarias" class="servicios-banner-img">
+        <div class="servicios-banner-container">
+          <img src="assets/02_Servicios/Banner-Servicios.png" alt="Servicios y Soluciones Prioritarias"
+            class="servicios-banner-img">
+          <div class="servicios-hero-header">
+            <p class="hero-tagline reveal-on-scroll">Strategy, Brand &amp; Business</p>
+            <h1 class="servicios-hero-title reveal-on-scroll delay-1">
+              SERVICIOS &amp;<br>
+              SOLUCIONES<br>
+              PRIORITARIAS
+            </h1>
+          </div>
         </div>
       </section>
 
@@ -79,74 +63,82 @@
       <section class="servicio-block" id="estrategia-marca">
         <!-- Intro Bar -->
         <div class="servicio-intro-bar reveal-on-scroll">
-          <span class="servicio-category-tag">ESTRATEGIA<br>DE MARCA</span>
-          <p class="servicio-intro-text">
-            Definimos el <strong>propósito</strong>, y la <strong>propuesta de valor</strong> para marcas que necesitan claridad estratégica y diferenciación real.
-          </p>
-        </div>
-
-        <!-- Illustration Banner -->
-        <div class="servicio-illustration-container terracotta reveal-on-scroll delay-1">
-          <img src="assets/02_Servicios/Servicios-Estrategia.png" alt="Ilustración Estrategia de Marca" class="servicio-illustration-img">
-        </div>
-
-        <!-- 3 Pillars Grid -->
-        <div class="servicio-pillars-grid theme-terracotta reveal-on-scroll delay-2">
-          <div class="servicio-pillar-col">
-            <h3 class="servicio-pillar-title text-terracotta">Identidad Visual</h3>
-            <p class="servicio-pillar-desc">
-              Creamos el sistema visual de la marca desde el logotipo y la paleta cromática, hasta aplicaciones digitales e impresas, con total coherencia y estilo.
+          <div class="servicio-intro-inner">
+            <span class="servicio-category-tag">ESTRATEGIA<br>DE MARCA</span>
+            <p class="servicio-intro-text">
+              Definimos el <strong>propósito</strong> y la <strong>propuesta de valor</strong> para marcas que necesitan claridad estratégica y diferenciación real.
             </p>
           </div>
-          <div class="servicio-pillar-col">
-            <h3 class="servicio-pillar-title text-terracotta">Arquitectura de marca</h3>
-            <p class="servicio-pillar-desc">
-              Ordenamos el portafolio de productos y marcas de forma clara y coherente, tanto para el consumidor como para el negocio.
-            </p>
+        </div>
+
+        <!-- Colored Band: Illustration + 3 Pillars -->
+        <div class="servicio-colored-band terracotta">
+          <div class="servicio-illustration-container reveal-on-scroll delay-1">
+            <img src="assets/02_Servicios/Ilustracion Estrategia de marca.svg" alt="Ilustración Estrategia de Marca"
+              class="servicio-illustration-img img-estrategia">
           </div>
-          <div class="servicio-pillar-col">
-            <h3 class="servicio-pillar-title text-terracotta">Cultura y gobernanza</h3>
-            <p class="servicio-pillar-desc">
-              Alineamos a los colaboradores con los valores, políticas y lineamientos de la marca en todos los niveles.
-            </p>
+
+          <div class="servicio-pillars-grid theme-terracotta reveal-on-scroll delay-2">
+            <div class="servicio-pillar-col">
+              <h3 class="servicio-pillar-title">Identidad de marca</h3>
+              <p class="servicio-pillar-desc">
+                Creamos el sistema visual de la marca desde el logotipo y la paleta cromática, hasta aplicaciones digitales e impresas, con total coherencia y estilo.
+              </p>
+            </div>
+            <div class="servicio-pillar-col">
+              <h3 class="servicio-pillar-title">Arquitectura<br>de marca</h3>
+              <p class="servicio-pillar-desc">
+                Ordenamos el portafolio de productos y marcas de forma clara y coherente, tanto para el consumidor como para el negocio.
+              </p>
+            </div>
+            <div class="servicio-pillar-col">
+              <h3 class="servicio-pillar-title">Cultura y<br>gobernanza</h3>
+              <p class="servicio-pillar-desc">
+                Alineamos a los colaboradores con los valores, políticas y lineamientos de la marca en todos los niveles.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Section 3: Sostenibilidad e Innovación -->
+      <!-- Section 3: Sustentabilidad e Innovación -->
       <section class="servicio-block" id="sostenibilidad-innovacion">
         <!-- Intro Bar -->
         <div class="servicio-intro-bar reveal-on-scroll">
-          <span class="servicio-category-tag">SOSTENIBILIDAD<br>E INNOVACIÓN</span>
-          <p class="servicio-intro-text">
-            Integramos circularidad, clima y naturaleza como palancas de competitividad, resiliencia y crecimiento.
-          </p>
-        </div>
-
-        <!-- Illustration Banner -->
-        <div class="servicio-illustration-container mint reveal-on-scroll delay-1">
-          <img src="assets/02_Servicios/Servicios-Sostenibilidad.png" alt="Ilustración Sostenibilidad e Innovación" class="servicio-illustration-img">
-        </div>
-
-        <!-- 3 Pillars Grid -->
-        <div class="servicio-pillars-grid theme-mint reveal-on-scroll delay-2">
-          <div class="servicio-pillar-col">
-            <h3 class="servicio-pillar-title text-slate">Estrategia ESG</h3>
-            <p class="servicio-pillar-desc">
-              Diseñamos marcos estratégicos ambientales, sociales y de gobernanza alineados a estándares internacionales y metas de negocio.
+          <div class="servicio-intro-inner">
+            <span class="servicio-category-tag">SUSTENTABILIDAD<br>E INNOVACIÓN</span>
+            <p class="servicio-intro-text">
+              Integramos circularidad, clima y naturaleza como palancas de competitividad, resiliencia y crecimiento.
             </p>
           </div>
-          <div class="servicio-pillar-col">
-            <h3 class="servicio-pillar-title text-slate">Economía circular</h3>
-            <p class="servicio-pillar-desc">
-              Rediseñamos procesos y modelos de negocio para minimizar residuos, maximizar el uso de recursos y regenerar sistemas naturales.
-            </p>
+        </div>
+
+        <!-- Colored Band: Illustration + 3 Pillars -->
+        <div class="servicio-colored-band mint">
+          <div class="servicio-illustration-container reveal-on-scroll delay-1">
+            <img src="assets/02_Servicios/Ilustracion Sustenibilidad.svg" alt="Ilustración Sustentabilidad e Innovación"
+              class="servicio-illustration-img img-sustentabilidad">
           </div>
-          <div class="servicio-pillar-col">
-            <h3 class="servicio-pillar-title text-slate">Gestión de riesgos</h3>
-            <p class="servicio-pillar-desc">
-              Identificamos y mitigamos riesgos climáticos y regulatorios, transformándolos en oportunidades de resiliencia y valor a largo plazo.
-            </p>
+
+          <div class="servicio-pillars-grid theme-mint reveal-on-scroll delay-2">
+            <div class="servicio-pillar-col">
+              <h3 class="servicio-pillar-title">Estrategia ESG</h3>
+              <p class="servicio-pillar-desc">
+                Diseñamos marcos estratégicos ambientales, sociales y de gobernanza alineados a estándares internacionales y metas de negocio.
+              </p>
+            </div>
+            <div class="servicio-pillar-col">
+              <h3 class="servicio-pillar-title">Economía circular</h3>
+              <p class="servicio-pillar-desc">
+                Rediseñamos procesos y modelos de negocio para minimizar residuos, maximizar el uso de recursos y regenerar sistemas naturales.
+              </p>
+            </div>
+            <div class="servicio-pillar-col">
+              <h3 class="servicio-pillar-title">Gestión de riesgos</h3>
+              <p class="servicio-pillar-desc">
+                Identificamos y mitigamos riesgos climáticos y regulatorios, transformándolos en oportunidades de resiliencia y valor a largo plazo.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -155,36 +147,40 @@
       <section class="servicio-block" id="comunicacion-estrategica">
         <!-- Intro Bar -->
         <div class="servicio-intro-bar reveal-on-scroll">
-          <span class="servicio-category-tag">COMUNICACIÓN<br>ESTRATÉGICA</span>
-          <p class="servicio-intro-text">
-            Diseñamos narrativas movilizadoras que alinean lo que la empresa hace con lo que comunica, impactando audiencias internas y externas para generar confianza, reputación y lealtad.
-          </p>
-        </div>
-
-        <!-- Illustration Banner -->
-        <div class="servicio-illustration-container slate reveal-on-scroll delay-1">
-          <img src="assets/02_Servicios/Servicios-Comunicacion.png" alt="Ilustración Comunicación Estratégica" class="servicio-illustration-img">
-        </div>
-
-        <!-- 3 Pillars Grid -->
-        <div class="servicio-pillars-grid theme-slate reveal-on-scroll delay-2">
-          <div class="servicio-pillar-col">
-            <h3 class="servicio-pillar-title text-terracotta">Talleres de trabajo multi-actor</h3>
-            <p class="servicio-pillar-desc">
-              Facilitamos espacios de co-creación y alineación entre líderes, equipos y grupos de interés para detonar acuerdos y acción colectiva.
+          <div class="servicio-intro-inner">
+            <span class="servicio-category-tag">COMUNICACIÓN<br>ESTRATÉGICA</span>
+            <p class="servicio-intro-text">
+              Diseñamos narrativas movilizadoras que alinean lo que la empresa hace con lo que comunica, impactando audiencias internas y externas para generar confianza, reputación y lealtad.
             </p>
           </div>
-          <div class="servicio-pillar-col">
-            <h3 class="servicio-pillar-title text-terracotta">Comunicación interna &amp; externa</h3>
-            <p class="servicio-pillar-desc">
-              Desarrollamos planes y campañas que conectan con la cultura organizacional y proyectan valor de marca hacia el exterior.
-            </p>
+        </div>
+
+        <!-- Colored Band: Illustration + 3 Pillars -->
+        <div class="servicio-colored-band slate">
+          <div class="servicio-illustration-container reveal-on-scroll delay-1">
+            <img src="assets/02_Servicios/Ilustracion Comunicacion.svg" alt="Ilustración Comunicación Estratégica"
+              class="servicio-illustration-img img-comunicacion">
           </div>
-          <div class="servicio-pillar-col">
-            <h3 class="servicio-pillar-title text-terracotta">Narrativas maestras</h3>
-            <p class="servicio-pillar-desc">
-              Construimos relatos corporativos potentes y consistentes que guían la voz de la empresa y movilizan a sus audiencias clave.
-            </p>
+
+          <div class="servicio-pillars-grid theme-slate reveal-on-scroll delay-2">
+            <div class="servicio-pillar-col">
+              <h3 class="servicio-pillar-title">Talleres de<br>trabajo multi-actor</h3>
+              <p class="servicio-pillar-desc">
+                Facilitamos espacios de co-creación y alineación entre líderes, equipos y grupos de interés para detonar acuerdos y acción colectiva.
+              </p>
+            </div>
+            <div class="servicio-pillar-col">
+              <h3 class="servicio-pillar-title">Comunicación<br>interna &amp; externa</h3>
+              <p class="servicio-pillar-desc">
+                Desarrollamos planes y campañas que conectan con la cultura organizacional y proyectan valor de marca hacia el exterior.
+              </p>
+            </div>
+            <div class="servicio-pillar-col">
+              <h3 class="servicio-pillar-title">Narrativas maestras</h3>
+              <p class="servicio-pillar-desc">
+                Construimos relatos corporativos potentes y consistentes que guían la voz de la empresa y movilizan a sus audiencias clave.
+              </p>
+            </div>
           </div>
         </div>
       </section>

@@ -78,7 +78,14 @@ function initMobileMenu() {
 
   if (!toggleBtn || !navDrawer) return;
 
-  function toggleMenu() {
+  function closeMenu() {
+    toggleBtn.classList.remove('is-active');
+    navDrawer.classList.remove('is-active');
+    document.body.style.overflow = '';
+  }
+
+  function toggleMenu(e) {
+    if (e) e.stopPropagation();
     const isOpen = toggleBtn.classList.toggle('is-active');
     navDrawer.classList.toggle('is-active', isOpen);
     document.body.style.overflow = isOpen ? 'hidden' : '';
@@ -87,11 +94,19 @@ function initMobileMenu() {
   toggleBtn.addEventListener('click', toggleMenu);
 
   mobileLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      toggleBtn.classList.remove('is-active');
-      navDrawer.classList.remove('is-active');
-      document.body.style.overflow = '';
-    });
+    link.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('click', (e) => {
+    if (navDrawer.classList.contains('is-active') && !navDrawer.contains(e.target) && !toggleBtn.contains(e.target)) {
+      closeMenu();
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navDrawer.classList.contains('is-active')) {
+      closeMenu();
+    }
   });
 }
 

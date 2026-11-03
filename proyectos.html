@@ -17,7 +17,7 @@
 <body class="proyectos-page">
   <div class="app-container">
 
-    <!-- Mobile Header Bar (Visible on mobile/tablet) -->
+    <!-- Top Header Bar (All Viewports) -->
     <header class="mobile-header">
       <a href="index.html" class="brand-logo" aria-label="Inicio SBB">
         <img src="assets/00_Branding/SBB-2026-logo.png" alt="SBB Logo">
@@ -29,43 +29,32 @@
       </button>
     </header>
 
-    <!-- Mobile Navigation Drawer -->
-    <nav class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Navegación móvil">
+    <!-- Navigation Drawer (Deploys via Hamburger Icon) -->
+    <nav class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Navegación principal">
       <ul class="nav-menu">
-        <li class="nav-item"><a href="index.html" class="mobile-nav-link">Inicio</a></li>
         <li class="nav-item"><a href="index.html#hero" class="mobile-nav-link">Nosotros</a></li>
         <li class="nav-item"><a href="servicios.html" class="mobile-nav-link">Servicios</a></li>
         <li class="nav-item active"><a href="proyectos.html" class="mobile-nav-link">Proyectos</a></li>
         <li class="nav-item"><a href="equipo.html" class="mobile-nav-link">Equipo</a></li>
+        <li class="nav-item"><a href="sustentabilidad.html" class="mobile-nav-link">Sustentabilidad</a></li>
       </ul>
     </nav>
-
-    <!-- Desktop Sidebar Navigation -->
-    <aside class="sidebar" aria-label="Navegación principal">
-      <a href="index.html" class="brand-logo" aria-label="Inicio SBB">
-        <img src="assets/00_Branding/SBB-2026-logo.png" alt="SBB Logo">
-      </a>
-      <nav>
-        <ul class="nav-menu">
-          <li class="nav-item"><a href="index.html#hero">Nosotros</a></li>
-          <li class="nav-item"><a href="servicios.html">Servicios</a></li>
-          <li class="nav-item active"><a href="proyectos.html">Proyectos</a></li>
-          <li class="nav-item"><a href="equipo.html">Equipo</a></li>
-        </ul>
-      </nav>
-    </aside>
 
     <!-- Main Content Stream -->
     <main class="main-content">
 
-      <!-- Section 1: Hero Header -->
+      <!-- Section 1: Hero & Banner -->
       <section class="proyectos-hero-section" id="hero">
-        <div class="proyectos-hero-header">
-          <p class="hero-tagline reveal-on-scroll">Sustainability, Brand &amp; Business</p>
-          <h1 class="proyectos-hero-title reveal-on-scroll delay-1">
-            HISTORIAS QUE<br>
-            NOS MUEVEN
-          </h1>
+        <div class="proyectos-banner-container">
+          <img src="assets/03_Proyectos/Baner_proyectos.png" alt="Historias que nos mueven"
+            class="proyectos-banner-img">
+          <div class="proyectos-hero-header">
+            <p class="hero-tagline reveal-on-scroll">Strategy, Brand &amp; Business</p>
+            <h1 class="proyectos-hero-title reveal-on-scroll delay-1">
+              HISTORIAS QUE<br>
+              NOS MUEVEN
+            </h1>
+          </div>
         </div>
       </section>
 
@@ -95,10 +84,21 @@
             </div>
           </a>
 
-          <!-- Card 3: Foro MX 2025 | Tetra Pak -->
-          <a href="proyecto-foromx.html" class="proyecto-card reveal-on-scroll">
+          <!-- Card 3: Foro MX 2026 | Tetra Pak -->
+          <a href="proyecto-foromx2026.html" class="proyecto-card reveal-on-scroll">
             <div class="proyecto-img-wrapper">
-              <img src="assets/03_Proyectos/3-ForoMX2025.png" alt="Foro MX 2025 | Tetra Pak" class="proyecto-img" loading="lazy">
+              <img src="assets/03_Proyectos/3-ForoMX2026.png" alt="Foro MX 2026 | Tetra Pak" class="proyecto-img" loading="lazy">
+            </div>
+            <div class="proyecto-info">
+              <h2 class="proyecto-title">FORO MX 2026 | TETRA PAK</h2>
+              <p class="proyecto-description">LA SOSTENIBILIDAD COMO UN NUEVO PACTO INDUSTRIAL.</p>
+            </div>
+          </a>
+
+          <!-- Card 4: Foro MX 2025 | Tetra Pak -->
+          <a href="proyecto-foromx.html" class="proyecto-card reveal-on-scroll delay-1">
+            <div class="proyecto-img-wrapper">
+              <img src="assets/03_Proyectos/4-ForoMX2025.png" alt="Foro MX 2025 | Tetra Pak" class="proyecto-img" loading="lazy">
             </div>
             <div class="proyecto-info">
               <h2 class="proyecto-title">FORO MX 2025 | TETRA PAK</h2>
@@ -106,10 +106,10 @@
             </div>
           </a>
 
-          <!-- Card 4: Comex -->
-          <a href="proyecto-comex.html" class="proyecto-card reveal-on-scroll delay-1">
+          <!-- Card 5: Comex -->
+          <a href="proyecto-comex.html" class="proyecto-card reveal-on-scroll">
             <div class="proyecto-img-wrapper">
-              <img src="assets/03_Proyectos/4-Comex.png" alt="Comex" class="proyecto-img" loading="lazy">
+              <img src="assets/03_Proyectos/5-Comex.png" alt="Comex" class="proyecto-img" loading="lazy">
             </div>
             <div class="proyecto-info">
               <h2 class="proyecto-title">COMEX</h2>
@@ -117,10 +117,10 @@
             </div>
           </a>
 
-          <!-- Card 5: Hoteles City Express -->
-          <a href="proyecto-cityexpress.html" class="proyecto-card reveal-on-scroll">
+          <!-- Card 6: Hoteles City Express -->
+          <a href="proyecto-cityexpress.html" class="proyecto-card reveal-on-scroll delay-1">
             <div class="proyecto-img-wrapper">
-              <img src="assets/03_Proyectos/5-HCE.png" alt="Hoteles City Express" class="proyecto-img" loading="lazy">
+              <img src="assets/03_Proyectos/6-HCE.png" alt="Hoteles City Express" class="proyecto-img" loading="lazy">
             </div>
             <div class="proyecto-info">
               <h2 class="proyecto-title">HOTELES CITY EXPRESS</h2>
@@ -128,10 +128,10 @@
             </div>
           </a>
 
-          <!-- Card 6: Aeroméxico -->
-          <a href="proyecto-aeromexico.html" class="proyecto-card reveal-on-scroll delay-1">
+          <!-- Card 7: Aeroméxico -->
+          <a href="proyecto-aeromexico.html" class="proyecto-card reveal-on-scroll">
             <div class="proyecto-img-wrapper">
-              <img src="assets/03_Proyectos/6-Aeromexico.png" alt="Aeroméxico" class="proyecto-img" loading="lazy">
+              <img src="assets/03_Proyectos/7-Aeromexico.png" alt="Aeroméxico" class="proyecto-img" loading="lazy">
             </div>
             <div class="proyecto-info">
               <h2 class="proyecto-title">AEROMÉXICO</h2>
@@ -139,10 +139,10 @@
             </div>
           </a>
 
-          <!-- Card 7: Samsung -->
-          <article class="proyecto-card reveal-on-scroll">
+          <!-- Card 8: Samsung -->
+          <article class="proyecto-card reveal-on-scroll delay-1">
             <div class="proyecto-img-wrapper">
-              <img src="assets/03_Proyectos/7-Samsung.png" alt="Samsung" class="proyecto-img" loading="lazy">
+              <img src="assets/03_Proyectos/8-Samsung.png" alt="Samsung" class="proyecto-img" loading="lazy">
             </div>
             <div class="proyecto-info">
               <h2 class="proyecto-title">SAMSUNG</h2>
@@ -150,28 +150,62 @@
             </div>
           </article>
 
-          <!-- Card 8: Fundación ABC -->
-          <article class="proyecto-card reveal-on-scroll delay-1">
-            <div class="proyecto-img-wrapper">
-              <img src="assets/03_Proyectos/8-Fundacion ABC.png" alt="Fundación ABC" class="proyecto-img" loading="lazy">
-            </div>
-            <div class="proyecto-info">
-              <h2 class="proyecto-title">FUNDACIÓN ABC</h2>
-              <p class="proyecto-description">LA RECAUDACIÓN Y VOLUNTARIADO COMO TRANSFORMADOR DE LA SALUD SOCIAL.</p>
-            </div>
-          </article>
-
         </div>
       </section>
 
-      <!-- Section 3: Dark Statement Bar (Más de 20 Años) -->
+      <!-- Section 3: Dark Statement Bar (Más de 20 Años + Client Logos) -->
       <section class="proyectos-statement-bar reveal-on-scroll">
         <div class="proyectos-statement-content">
-          <p class="proyectos-statement-text">
-            MÁS DE <span class="highlight-white">20 AÑOS</span><br>
-            DISEÑANDO, INNOVANDO Y<br>
-            COMUNICANDO.
-          </p>
+          <h2 class="proyectos-statement-title">
+            MÁS DE 20 AÑOS<br>
+            DISEÑANDO, INNOVANDO<br>
+            Y COMUNICANDO.
+          </h2>
+
+          <div class="proyectos-marcas-wall">
+            <!-- Row 1 -->
+            <div class="marcas-row">
+              <img src="assets/03_Proyectos/Marcas/pilot.png" alt="Pilot Ossa" class="marca-logo" loading="lazy">
+              <img src="assets/03_Proyectos/Marcas/mxc.png" alt="México por el Clima" class="marca-logo" loading="lazy">
+              <img src="assets/03_Proyectos/Marcas/telcel.png" alt="Telcel" class="marca-logo" loading="lazy">
+              <img src="assets/03_Proyectos/Marcas/tetrapak.png" alt="Tetra Pak" class="marca-logo" loading="lazy">
+            </div>
+            <!-- Row 2 -->
+            <div class="marcas-row">
+              <img src="assets/03_Proyectos/Marcas/aeromexico.png" alt="Aeroméxico" class="marca-logo" loading="lazy">
+              <img src="assets/03_Proyectos/Marcas/delta.png" alt="Delta" class="marca-logo" loading="lazy">
+              <img src="assets/03_Proyectos/Marcas/samsung.png" alt="Samsung" class="marca-logo" loading="lazy">
+              <img src="assets/03_Proyectos/Marcas/comex.png" alt="Comex" class="marca-logo" loading="lazy">
+              <img src="assets/03_Proyectos/Marcas/janssen.png" alt="Janssen" class="marca-logo" loading="lazy">
+            </div>
+            <!-- Row 3 -->
+            <div class="marcas-row">
+              <img src="assets/03_Proyectos/Marcas/tupperware.png" alt="Tupperware" class="marca-logo" loading="lazy">
+              <img src="assets/03_Proyectos/Marcas/grupo expansion.png" alt="Grupo Expansión" class="marca-logo" loading="lazy">
+              <img src="assets/03_Proyectos/Marcas/novartis.png" alt="Novartis" class="marca-logo" loading="lazy">
+              <img src="assets/03_Proyectos/Marcas/cablevision.png" alt="Cablevisión" class="marca-logo" loading="lazy">
+              <img src="assets/03_Proyectos/Marcas/city express.png" alt="Hoteles City Express" class="marca-logo" loading="lazy">
+            </div>
+            <!-- Row 4 -->
+            <div class="marcas-row">
+              <img src="assets/03_Proyectos/Marcas/ienova.png" alt="IEnova" class="marca-logo" loading="lazy">
+              <img src="assets/03_Proyectos/Marcas/loreal.png" alt="L'Oréal Paris" class="marca-logo" loading="lazy">
+              <img src="assets/03_Proyectos/Marcas/aristegui.png" alt="Aristegui" class="marca-logo" loading="lazy">
+              <img src="assets/03_Proyectos/Marcas/ibero.png" alt="IBERO" class="marca-logo" loading="lazy">
+              <img src="assets/03_Proyectos/Marcas/visa.png" alt="VISA" class="marca-logo" loading="lazy">
+              <img src="assets/03_Proyectos/Marcas/cnn.png" alt="CNN" class="marca-logo" loading="lazy">
+              <img src="assets/03_Proyectos/Marcas/agfa.png" alt="AGFA" class="marca-logo" loading="lazy">
+            </div>
+            <!-- Row 5 -->
+            <div class="marcas-row">
+              <img src="assets/03_Proyectos/Marcas/televisa.png" alt="Televisa" class="marca-logo" loading="lazy">
+              <img src="assets/03_Proyectos/Marcas/mattel.png" alt="Mattel" class="marca-logo" loading="lazy">
+              <img src="assets/03_Proyectos/Marcas/adt.png" alt="ADT" class="marca-logo" loading="lazy">
+              <img src="assets/03_Proyectos/Marcas/wwf.png" alt="WWF" class="marca-logo" loading="lazy">
+              <img src="assets/03_Proyectos/Marcas/fruitoftheloom.png" alt="Fruit of the Loom" class="marca-logo" loading="lazy">
+              <img src="assets/03_Proyectos/Marcas/gsk.png" alt="GSK" class="marca-logo" loading="lazy">
+            </div>
+          </div>
         </div>
       </section>
 
