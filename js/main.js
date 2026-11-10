@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initNavigation();
   initContactModal();
   initMobileMenu();
+  initBackToTop();
 });
 
 /**
@@ -177,4 +178,43 @@ function initContactModal() {
       }, 3000);
     });
   }
+}
+
+/**
+ * 5. Floating Back to Top Button
+ */
+function initBackToTop() {
+  let backToTopBtn = document.getElementById('backToTopBtn');
+
+  if (!backToTopBtn) {
+    backToTopBtn = document.createElement('button');
+    backToTopBtn.id = 'backToTopBtn';
+    backToTopBtn.className = 'back-to-top-btn';
+    backToTopBtn.type = 'button';
+    backToTopBtn.setAttribute('aria-label', 'Regresar arriba');
+    backToTopBtn.innerHTML = `
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+        <polyline points="18 15 12 9 6 15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    `;
+    document.body.appendChild(backToTopBtn);
+  }
+
+  function toggleVisibility() {
+    if (window.scrollY > 300) {
+      backToTopBtn.classList.add('is-visible');
+    } else {
+      backToTopBtn.classList.remove('is-visible');
+    }
+  }
+
+  window.addEventListener('scroll', toggleVisibility, { passive: true });
+  toggleVisibility();
+
+  backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
 }

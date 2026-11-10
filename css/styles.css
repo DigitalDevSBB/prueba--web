@@ -1951,6 +1951,11 @@ body {
   --case-accent-text: #FFFFFF;
 }
 
+.case-page.theme-samsung {
+  --case-accent: #0C2AA6;
+  --case-accent-text: #FFFFFF;
+}
+
 .case-page .sidebar {
   background-color: #FFFFFF;
 }
@@ -2287,6 +2292,17 @@ body {
   margin: 0 auto;
 }
 
+.case-resultados-grid.cols-1 {
+  grid-template-columns: 1fr;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.case-resultados-grid.cols-1 .case-resultado-col {
+  align-items: flex-start;
+  text-align: left;
+}
+
 .case-resultado-col {
   display: flex;
   flex-direction: column;
@@ -2309,6 +2325,111 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: var(--case-accent-text, var(--color-text-main));
+}
+
+/* Case Pagination Bar (Prev / Next Project) */
+.case-pagination-section {
+  width: 100%;
+  background-color: #EEEEEE;
+  padding: clamp(2.5rem, 4.2vw, 3.5rem) var(--body-padding-x);
+}
+
+.case-pagination-inner {
+  max-width: var(--text-block-max);
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.case-pagination-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.25rem;
+  text-decoration: none;
+  color: var(--color-text-main);
+  transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.case-pagination-link:hover {
+  color: var(--color-terracotta);
+}
+
+.case-pagination-link.prev:hover .case-pagination-icon {
+  transform: translateX(-4px);
+  border-color: var(--color-terracotta);
+}
+
+.case-pagination-link.next:hover .case-pagination-icon {
+  transform: translateX(4px);
+  border-color: var(--color-terracotta);
+}
+
+.case-pagination-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid var(--color-text-main);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.case-pagination-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.case-pagination-label {
+  font-family: var(--font-primary);
+  font-size: clamp(1.5rem, 2.5vw, 36px);
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.01em;
+}
+
+/* Floating Back-to-Top Button */
+.back-to-top-btn {
+  position: fixed;
+  right: clamp(1.5rem, 4vw, 3.75rem);
+  bottom: clamp(1.75rem, 4.5vw, 4rem);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--color-footer-bg);
+  color: #FFFFFF;
+  border: 1.5px solid #FFFFFF;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 950;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: opacity var(--transition-fast), visibility var(--transition-fast), transform var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+
+.back-to-top-btn.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top-btn:hover {
+  background-color: var(--color-terracotta);
+  border-color: var(--color-terracotta);
+  transform: translateY(-3px);
+}
+
+.back-to-top-btn svg {
+  width: 24px;
+  height: 24px;
 }
 
 /* Responsive adjustments for Case Study */
@@ -2416,6 +2537,31 @@ body {
 
   .case-resultados-section {
     padding: 3.5rem var(--body-padding-x) 4.5rem var(--body-padding-x);
+  }
+
+  .case-pagination-icon {
+    width: 38px;
+    height: 38px;
+  }
+
+  .case-pagination-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .case-pagination-label {
+    font-size: 1.25rem;
+  }
+
+  .case-pagination-link {
+    gap: 0.75rem;
+  }
+
+  .back-to-top-btn {
+    width: 42px;
+    height: 42px;
+    right: 1.25rem;
+    bottom: 1.5rem;
   }
 }
 
